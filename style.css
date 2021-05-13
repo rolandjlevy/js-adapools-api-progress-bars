@@ -1,0 +1,56 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.bar-wrapper {
+  border: 1px solid #aaa;
+  background-color: #eee;
+  max-width: 300px;
+}
+
+.bar-label {
+  margin-bottom: 5px;
+}
+
+.bar {
+  height: 20px;
+  background-color: grey;
+  width: 0%;
+  transition: width 1s ease-in-out;
+}
+
+.section {
+  min-width: 200px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.active_stake .bar {
+  transition-delay: 0s;
+  background-color: hsl(190, 100%, 35%);
+}
+
+.total_stake .bar {
+  transition-delay: 0.25s;
+  background-color: hsl(200, 100%, 40%);
+}
+
+.pledged .bar {
+  transition-delay: 0.75s;
+  background-color: hsl(210, 100%, 45%);
+}
+
+.tax_fix .bar {
+  transition-delay: 1s;
+  background-color: hsl(220, 100%, 50%);
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
