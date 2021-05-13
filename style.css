@@ -7,10 +7,6 @@
   opacity: 0;
 }
 
-.fade-in {
-  animation: fade-in 1s ease 0s 1 normal forwards;
-}
-
 .wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -84,6 +80,10 @@ a.link:hover {
 /**************/
 /* animations */
 /**************/
+
+.fade-in {
+  animation: fade-in 1s ease 0s 1 normal forwards;
+}
 
 @keyframes fade-in {
   to {
