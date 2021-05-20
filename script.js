@@ -33,12 +33,12 @@ function displayProgressBars(pool_id) {
     $('.db_name').textContent = result.data.db_name;
     $('.db_url').href = result.data.db_url;
 
-    // $('#data-container').innerHTML = str;
-
     Object.entries(maxValues).forEach(([key, max]) => {
       const value = percentage(key, max) + '%';
       updateProgressBar(key, value);
     });
+
+    // $('#data-container').innerHTML = str;
 
   })
   .catch(err => {
@@ -49,6 +49,7 @@ function displayProgressBars(pool_id) {
 const pool_id = '943fde2eb40fc5acdbc81c88230b56123231f83453eb72c023bc7707';
 displayProgressBars(pool_id);
 
+// Dropdown menu for all ada pools:
 const poolGroupsUrl = 'https://js.adapools.org/groups.json';
 
 function generateDropdown() {
